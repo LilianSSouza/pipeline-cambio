@@ -4,11 +4,14 @@ Este projeto foi desenvolvido como parte de um desafio acadêmico para aplicar c
 
 ## 📌 Objetivo
 
--Construir um pipeline completo que:
--Coleta dados de cotações cambiais
--Realiza transformações e enriquecimento
--Gera insights com auxílio de LLMs (OpenAI)
--Exibe os resultados em um dashboard interativo
+Construir um pipeline completo que:
+ Coleta dados de cotações cambiais
+
+ Realiza transformações e enriquecimento
+
+ Gera insights com auxílio de LLMs (OpenAI)
+
+ Exibe os resultados em um dashboard interativo
 
 ### 🧰 Tecnologias utilizadas
 
@@ -33,43 +36,45 @@ Este projeto foi desenvolvido como parte de um desafio acadêmico para aplicar c
 ├── dashboard.py
 ├── README.md
 └── .gitignore
----
+
+
 
 ##### ⚙️ Como executar o projeto
 
 1. Clone o repositório
 
-```bash
+bash
 git clone https://github.com/LilianSSouza/pipeline-cambio.git
 cd pipeline-cambio
----
+```
 
 2. Instale as dependências
 
-```bash
+bash
 pip install -r requirements.txt
----
+```
 
 Se você não tiver um arquivo requirements.txt, pode instalar manualmente:
 
-```bash
+bash
 pip install pandas sqlalchemy openai streamlit requests matplotlib seaborn
----
+```
+
 3. Configure suas variáveis de ambiente
 
 Crie um arquivo .env com sua chave da OpenAI:
 
-```Código
+
 OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
----
+``
 
 Este arquivo está no .gitignore e não será enviado ao GitHub.
 
 4. 🚀 Execute o pipeline
 
-```bash
+bash
 python run_pipeline.py
----
+```
 
 Esse script irá:
 
@@ -81,9 +86,9 @@ Esse script irá:
 
 5. 📊 Inicie o dashboard
 
-```bash
+bash
 streamlit run dashboard.py
----
+```
 
 Você poderá:
 📅 Selecionar a data desejada
@@ -93,10 +98,8 @@ Você poderá:
 
 🌐 Acesse o dashboard online
 
-```Link
 👉 [Acesse o dashboard aqui](https://pipeline-cambio.streamlit.app)
----
-
+```
 
 
 ####### 📁 Arquivos gerados
