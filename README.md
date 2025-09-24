@@ -13,7 +13,7 @@ Construir um pipeline completo que:
 
  Exibe os resultados em um dashboard interativo
 
-### 🧰 Tecnologias utilizadas
+## 🧰 Tecnologias utilizadas
 
 -Python
 -Pandas
@@ -24,9 +24,9 @@ Construir um pipeline completo que:
 -Datetime
 -Matplotlib / Seaborn
 
-#### 🗂️ Estrutura do projeto
+## 🗂️ Estrutura do projeto
 
-```bash
+
 ├── raw/           # Dados brutos
 ├── silver/        # Dados tratados
 ├── gold/          # Dados enriquecidos
@@ -36,31 +36,31 @@ Construir um pipeline completo que:
 ├── dashboard.py
 ├── README.md
 └── .gitignore
+```
 
 
 
-##### ⚙️ Como executar o projeto
+## ⚙️ Como executar o projeto
 
-1. Clone o repositório
+### 1. Clone o repositório
 
 bash
 git clone https://github.com/LilianSSouza/pipeline-cambio.git
 cd pipeline-cambio
 ```
 
-2. Instale as dependências
+### 2. Instale as dependências
 
-bash
 pip install -r requirements.txt
 ```
 
-Se você não tiver um arquivo requirements.txt, pode instalar manualmente:
+### Se você não tiver um arquivo requirements.txt, pode instalar manualmente:
 
-bash
+
 pip install pandas sqlalchemy openai streamlit requests matplotlib seaborn
 ```
 
-3. Configure suas variáveis de ambiente
+### 3. Configure suas variáveis de ambiente
 
 Crie um arquivo .env com sua chave da OpenAI:
 
@@ -70,7 +70,7 @@ OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 Este arquivo está no .gitignore e não será enviado ao GitHub.
 
-4. 🚀 Execute o pipeline
+### 4. 🚀 Execute o pipeline
 
 bash
 python run_pipeline.py
@@ -83,8 +83,7 @@ Esse script irá:
 🗄️ Inserir os dados no banco de dados
 🧠 Gerar um insight com LLM (ou texto padrão, caso a API falhe)
 
-
-5. 📊 Inicie o dashboard
+### 5. 📊 Inicie o dashboard
 
 bash
 streamlit run dashboard.py
@@ -96,13 +95,12 @@ Você poderá:
 🧠 Ler o insight gerado pela LLM
 
 
-🌐 Acesse o dashboard online
+## 🌐 Acesse o dashboard online
 
 👉 [Acesse o dashboard aqui](https://pipeline-cambio.streamlit.app)
 ```
 
-
-####### 📁 Arquivos gerados
+## 📁 Arquivos gerados
 
 
 Os arquivos finais ficam na pasta /gold/:
@@ -110,5 +108,5 @@ Os arquivos finais ficam na pasta /gold/:
 gold/YYYY-MM-DD.parquet → dados limpos
 gold/insights/YYYY-MM-DD.txt → relatório gerado pela LLM
 
-######## 📄 Licença
+## 📄 Licença
 Este projeto é de uso acadêmico .
