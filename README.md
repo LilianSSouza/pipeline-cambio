@@ -5,28 +5,36 @@ Este projeto foi desenvolvido como parte de um desafio acadêmico para aplicar c
 ## 📌 Objetivo
 
 Construir um pipeline completo que:
- Coleta dados de cotações cambiais
 
- Realiza transformações e enriquecimento
+-Coleta dados de cotações cambiais
 
- Gera insights com auxílio de LLMs (OpenAI)
+-Realiza transformações e enriquecimento
 
- Exibe os resultados em um dashboard interativo
+-Gera insights com auxílio de LLMs (OpenAI)
+
+-Exibe os resultados em um dashboard interativo
 
 ## 🧰 Tecnologias utilizadas
 
 -Python
+
 -Pandas
+
 -SQLAlchemy
+
 -OpenAI API
+
 -Streamlit
+
 -Requests
+
 -Datetime
+
 -Matplotlib / Seaborn
 
 ## 🗂️ Estrutura do projeto
 
-
+```
 ├── raw/           # Dados brutos
 ├── silver/        # Dados tratados
 ├── gold/          # Dados enriquecidos
@@ -44,19 +52,20 @@ Construir um pipeline completo que:
 
 ### 1. Clone o repositório
 
-bash
+```
 git clone https://github.com/LilianSSouza/pipeline-cambio.git
 cd pipeline-cambio
 ```
 
 ### 2. Instale as dependências
 
+```
 pip install -r requirements.txt
 ```
 
-### Se você não tiver um arquivo requirements.txt, pode instalar manualmente:
+Se você não tiver um arquivo requirements.txt, pode instalar manualmente:
 
-
+```
 pip install pandas sqlalchemy openai streamlit requests matplotlib seaborn
 ```
 
@@ -64,39 +73,46 @@ pip install pandas sqlalchemy openai streamlit requests matplotlib seaborn
 
 Crie um arquivo .env com sua chave da OpenAI:
 
-
+```
 OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-``
+```
 
 Este arquivo está no .gitignore e não será enviado ao GitHub.
 
 ### 4. 🚀 Execute o pipeline
 
-bash
+```
 python run_pipeline.py
 ```
 
 Esse script irá:
 
 🔄 Buscar os dados da API de câmbio
+
 🧹 Transformar e salvar os dados em formato Parquet
+
 🗄️ Inserir os dados no banco de dados
+
 🧠 Gerar um insight com LLM (ou texto padrão, caso a API falhe)
 
 ### 5. 📊 Inicie o dashboard
 
-bash
+```
 streamlit run dashboard.py
 ```
 
 Você poderá:
+
 📅 Selecionar a data desejada
+
 💱 Visualizar as cotações das moedas
+
 🧠 Ler o insight gerado pela LLM
 
 
 ## 🌐 Acesse o dashboard online
 
+```
 👉 [Acesse o dashboard aqui](https://pipeline-cambio.streamlit.app)
 ```
 
