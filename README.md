@@ -122,6 +122,7 @@ Você poderá:
 Os arquivos finais ficam na pasta /gold/:
 
 gold/YYYY-MM-DD.parquet → dados limpos
+
 gold/insights/YYYY-MM-DD.txt → relatório gerado pela LLM
 
 ## 📄 Licença
