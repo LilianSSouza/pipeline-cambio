@@ -4,6 +4,8 @@ import streamlit as st
 import pandas as pd
 import os
 from sqlalchemy import create_engine
+from pipeline_utils import INSIGHTS_DIR
+
 
 DB_URL = st.secrets["DATABASE_URL"]
 
