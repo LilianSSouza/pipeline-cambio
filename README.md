@@ -109,12 +109,10 @@ Você poderá:
 
 🧠 Ler o insight gerado pela LLM
 
+## Dashboard
 
-## 🌐 Acesse o dashboard online
+![Dashboard](imagens/dashboard.png)
 
-```
-👉 [Acesse o dashboard aqui](https://pipeline-cambio.streamlit.app)
-```
 
 ## 📁 Arquivos gerados
 
