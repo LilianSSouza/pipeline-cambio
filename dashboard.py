@@ -3,8 +3,9 @@
 import streamlit as st
 import pandas as pd
 import os
-from pipeline_utils import DB_URL, INSIGHTS_DIR
 from sqlalchemy import create_engine
+
+DB_URL = st.secrets["DATABASE_URL"]
 
 st.set_page_config(page_title="Cotações Cambiais", layout="wide")
 st.title("📈 Dashboard de Cotações Cambiais")
