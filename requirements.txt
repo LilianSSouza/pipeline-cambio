@@ -1,0 +1,8 @@
+streamlit
+pandas
+sqlalchemy
+openai
+requests
+matplotlib
+seaborn
+python-dotenv
